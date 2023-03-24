@@ -1,0 +1,25 @@
+#topic:
+#  name: people
+#
+#spring:
+#  kafka:
+#    bootstrap-servers=localhost: 9092
+#    properties:
+#      specific:
+#        avro:
+#          reader: true
+#      schema:
+#        registry:
+#          url: http://localhost:8081
+#
+#  producer:
+#    key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+#    value-deserializer: io.confluent.kafka.serializers.KafkaAvroDeserializer
+#
+#  consumer:
+#    group-id: group_id
+#    auto-offset-reset: earliest
+#    key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+#    value-deserializer: io.confluent.kafka.serializers.KafkaAvroDeserializer
+#    enable-auto-commit: false
+#
