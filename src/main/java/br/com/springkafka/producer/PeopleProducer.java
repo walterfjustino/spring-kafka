@@ -13,7 +13,7 @@ import org.springframework.stereotype.Service;
 public class PeopleProducer {
 
 
-  @Value("${topic.name.property}")
+  @Value("${topic.name}")
   private String topicName;
   private final KafkaTemplate<String, People> kafkaTemplate;
 

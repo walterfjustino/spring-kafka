@@ -11,7 +11,7 @@ import org.springframework.context.annotation.Configuration;
 @RequiredArgsConstructor
 public class KafkaTopicConfiguration {
 
-  @Value("${topic.name.property}")
+  @Value("${topic.name}")
   private String topicName;
 
   @Bean
